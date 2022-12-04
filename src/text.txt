@@ -1,0 +1,15 @@
+creating the application
+    - npx create-react-app app-name
+    - npm start
+
+folder structure
+components
+    types of components
+        - functional component
+        - class component
+
+props : it stands for properties which  is used to pass data from parent component to 
+child components
+    - props are immutable(which cannot be changed).
+
+
