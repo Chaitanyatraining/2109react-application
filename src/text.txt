@@ -13,3 +13,15 @@ child components
     - props are immutable(which cannot be changed).
 
 
+    - Never touch the DOM directly.
+    - Any DOM manipulations will be done by React DOM.
+    - for bigger applications DOM manipulations are really expensive.
+    - React was virtual DOM
+    - React DOM is copy of Reac DOM.
+
+    class components
+        - class component are statefull components
+        - class components have the react features like life cycle methods.
+            - making api in class components 
+
+    
