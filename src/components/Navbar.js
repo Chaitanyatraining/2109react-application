@@ -19,7 +19,10 @@ function Navbar() {
           <a className="nav-link" href="#">Features</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
+          <Link to="/users" className="nav-link">UsersData</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/pagination" className="nav-link">Pagination</Link>
         </li>
         <li className="nav-item">
           <Link to="/contact-us" className="nav-link">Contact Us</Link>
