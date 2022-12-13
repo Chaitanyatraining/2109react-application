@@ -6,9 +6,21 @@ class Pagination extends Component {
         pageNumber:0
     }
 
+    handleBtnClick = (num)=>{
+        this.setState({pageNumber:num})
+    }
+
     componentDidMount(){
         this.getDummyData();
     }
+
+    componentDidUpdate(prevsProps,prevsState){
+        if(prevsState.pageNumber !== this.state.pageNumber){
+            this.getDummyData();
+        }
+    }
+
+
 
     getDummyData = async()=>{
         const response = await fetch(`https://dummyapi.io/data/v1/user?page=${this.state.pageNumber}&limit=10`,
@@ -33,10 +45,27 @@ class Pagination extends Component {
                         <div className='row'>
                             {
                                 this.state.UserData.map((user)=>(
-                                    <p>{user.firstName}</p>
+                                    <div className='col-md-6 mt-3'>
+                                        <div className='card p-2'>
+                                            <div className='row'>
+                                                <div className='col-md-4'>
+                                                    <img src={user.picture} alt={user.firstname} />
+                                                </div>
+                                                <div className='col-md-8'>
+                                                    <h4>{user.id}</h4>
+                                                    <h5><span>{user.firstName} {user.lastName}</span></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 ))
                             }
                         </div>
+                       <div>
+                        {[1,2,3,4,5,6,7,8,9].map((num)=>(
+                            <button className='btn btn-info me-2' onClick={()=>this.handleBtnClick(num)}>{num}</button>
+                        ))}
+                       </div>
                     </div>
                 ):<p>loading</p>
             }
