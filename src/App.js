@@ -8,12 +8,14 @@ import Navbar from './components/Navbar';
 import ListsandKeys from './components/ListsandKeys';
 import ContactUs from './components/ContactUs';
 import Routing from './components/Routing/Routing';
+import BasicHook from './components/Hooks/BasicHook';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routing />
+      {/* <BasicHook /> */}
       {/* <ContactUs /> */}
       {/* <ClassComp /> */}
       {/* <ListsandKeys /> */}

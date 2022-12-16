@@ -25,6 +25,12 @@ function Navbar() {
           <Link to="/pagination" className="nav-link">Pagination</Link>
         </li>
         <li className="nav-item">
+          <Link to="/userDataEffect" className="nav-link">userDataEffect</Link>
+        </li>
+         <li className="nav-item">
+          <Link to="/useEffectPagination" className="nav-link">useEffectPagination</Link>
+        </li>
+        <li className="nav-item">
           <Link to="/contact-us" className="nav-link">Contact Us</Link>
         </li>
         <li className="nav-item">
