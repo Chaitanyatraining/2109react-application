@@ -34,6 +34,9 @@ function Navbar() {
           <Link to="/contact-us" className="nav-link">Contact Us</Link>
         </li>
         <li className="nav-item">
+          <Link to="/UseReducerHook" className="nav-link">useReducerHook</Link>
+        </li>
+        <li className="nav-item">
           <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>

@@ -6,6 +6,7 @@ function UseEffectPagination() {
 
     useEffect(()=>{
         getDummyData();
+        
     },[pageNumber])
 
   const getDummyData = async()=>{
